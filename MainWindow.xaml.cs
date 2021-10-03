@@ -15,9 +15,6 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // the "??" operator checks for nullability and value all at once.
-            // because ConvertCheckBox.IsChecked is of type __bool ?__ which
-            // is a nullable boolean, so it can either be true, false or null
             var toDecrypt = ConvertCheckBox.IsChecked ?? false;
             var inputText = InputTextBox.Text;
             var encryptionmethod = EncryptionComboBox.Text;
@@ -135,14 +132,10 @@ internal static class LetterNumber
     }
 
 
-// This class is not instantiated because it is static. 
-// You might not be able to do this so easily...
-// And each class should have its own file !
 internal static class Caesar
     {
         public static string Code(string inputText, bool toDecrypt)
         {
-            // Ternary operator - Google it
             return toDecrypt ? Decrypt(inputText) : Encrypt(inputText);
         }
 
