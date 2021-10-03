@@ -4,6 +4,18 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;Test</Configurations>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <StartupObject></StartupObject>
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <OutputPath>TP2_WPF_APP\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutputPath>TP2_WPF_APP\</OutputPath>
   </PropertyGroup>
 
 </Project>

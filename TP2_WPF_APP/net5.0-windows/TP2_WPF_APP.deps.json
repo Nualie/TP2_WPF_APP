@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TP2_WPF_APP/1.0.0": {
+        "runtime": {
+          "TP2_WPF_APP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP2_WPF_APP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
