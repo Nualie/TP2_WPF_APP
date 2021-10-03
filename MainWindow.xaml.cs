@@ -151,7 +151,6 @@ internal static class Caesar
         {
             if (!char.IsLetter(ch))
             {
-
                 return ch;
             }
 
